@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router";
 
 export default function Navbar() {
-  const [page, setPage] = useState("Home");
+  const [page, setPage] = useState("");
 
   useEffect(() => {
     setPage(document.title);
