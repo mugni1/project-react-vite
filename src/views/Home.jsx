@@ -4,7 +4,7 @@ import Navbar from "../components/Navbar";
 export default function Home() {
   useEffect(() => {
     document.title = "Home";
-  });
+  }, []);
   return (
     <>
       <Navbar />

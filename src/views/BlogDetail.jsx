@@ -8,7 +8,7 @@ import moment from "moment";
 export default function BlogDetail() {
   useEffect(() => {
     document.title = "Blog Detail";
-  });
+  }, []);
   const [loading, setLoading] = useState(true);
   const [blogDetail, setBlogDetail] = useState({});
   const [notFound, setNotFound] = useState(false);
