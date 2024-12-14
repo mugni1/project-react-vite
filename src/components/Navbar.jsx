@@ -3,7 +3,7 @@ import { Link } from "react-router";
 export default function Navbar() {
   return (
     <>
-      <nav className="flex h-20 w-full fixed fixed-top px-5 bg-emerald-600 shadow-md">
+      <nav className="flex h-20 w-full fixed fixed-top px-5 bg-slate-800 shadow-md">
         <div className="container mx-auto w-full h-full px-5 flex justify-between">
           <div className=" w-2/12 h-full flex items-center font-bold text-white text-2xl">
             <Link to="/">AAM</Link>
@@ -22,7 +22,7 @@ export default function Navbar() {
           <div className=" w-2/12 h-full flex justify-end items-center font-bold text-xl">
             <Link
               to="/contac"
-              className="py-1 px-5 bg-white text-emerald-600 hover:bg-slate-300 rounded-md shadow-md"
+              className="py-1 px-5 bg-white text-slate-800 hover:bg-slate-300 rounded-md shadow-md"
             >
               Contac US
             </Link>
