@@ -30,7 +30,9 @@ export default function BlogCard() {
   return (
     <>
       {loading ? (
-        <Loading />
+        <section className=" w-full px-5">
+          <Loading />
+        </section>
       ) : (
         listNews.map((item) => {
           return (

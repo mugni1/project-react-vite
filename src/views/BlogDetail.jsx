@@ -8,6 +8,7 @@ import moment from "moment";
 export default function BlogDetail() {
   const [loading, setLoading] = useState(true);
   const [blogDetail, setBlogDetail] = useState({});
+  const [notFound, setNotFound] = useState(false);
   // ambil param
   const param = useParams();
   // render ini jika param.id berubah
@@ -18,10 +19,10 @@ export default function BlogDetail() {
     })
       .then((response) => {
         setBlogDetail(response.data);
-        console.log(response.data);
       })
       .catch((error) => {
         console.log(error);
+        setNotFound(true);
       })
       .finally(() => {
         setLoading(false);
@@ -41,6 +42,8 @@ export default function BlogDetail() {
       <section className="pt-24 px-5 container mx-auto flex flex-wrap">
         {loading ? (
           <Loading />
+        ) : notFound ? (
+          <b className="font-semibolda text-xl text-slate-700">Not Found</b>
         ) : (
           <section className="w-full md:w-8/12">
             <h2 className="font-semibold text-xl md:text-2xl text-slate-800 ">
