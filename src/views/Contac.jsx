@@ -1,6 +1,10 @@
 import Navbar from "../components/Navbar";
+import { useEffect } from "react";
 
 export default function Contac() {
+  useEffect(() => {
+    document.title = "Contac Us";
+  });
   return (
     <>
       <Navbar />

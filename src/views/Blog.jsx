@@ -1,7 +1,11 @@
 import Navbar from "../components/Navbar";
 import BlogCard from "../components/BlogCard";
+import { useEffect } from "react";
 
 export default function Blog() {
+  useEffect(() => {
+    document.title = "Blog";
+  });
   return (
     <>
       <Navbar />

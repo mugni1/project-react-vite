@@ -1,6 +1,10 @@
 import Navbar from "../components/Navbar";
+import { useEffect } from "react";
 
 export default function About() {
+  useEffect(() => {
+    document.title = "About";
+  });
   return (
     <>
       <Navbar />
